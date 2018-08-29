@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Header
+------------------------------------------------------------*/
+header {
+  background-image: url("../images/lesson7.jpg");
+  height: 500px;
+  width: 100%;
+  　background-size: cover;
+  background-position: center center;
+  display: flex; }
+
+/* Contents
+------------------------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section .container {
+    height: 200px;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto; }
+
+.skill-box {
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  background: #ddd; }
+  .skill-box h3 {
+    background: gray;
+    padding: 10px; }
+  .skill-box p {
+    padding: 60px; }
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: #008080;
+  padding: 30px 0;
+  text-align: center;
+  color: #FFF;
+  height: 120px;
+  margin: 30px; }
+  footer h3 {
+    margin: 30px; }
+  footer .button {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px; }
+
+@media (max-width: 768px) {
+  /* Header
+  ------------------------------------------------------------*/
+  header {
+    background-image: url("../images/lesson7.jpg");
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; }
+
+  /* Contents
+  ------------------------------------------------------------*/
+  section {
+    padding: 60px 0; }
+    section .container {
+      display: flex;
+      margin: 0 auto;
+      height: auto;
+      width: auto;
+      flex-direction: column; }
+
+  .skill-box {
+    float: left;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #ddd;
+    height: auto;
+    width: auto; }
+    .skill-box h3 {
+      background: gray;
+      padding: 10px; }
+    .skill-box p {
+      padding: 60px; }
+
+  /* Footer
+  ------------------------------------------------------------*/
+  footer {
+    background-color: #008080;
+    padding: 30px 0;
+    text-align: center;
+    color: #FFF;
+    height: auto;
+    margin: auto; }
+    footer h3 {
+      margin: 30px; }
+    footer .button {
+      background: #fff;
+      padding: 10px;
+      border-radius: 5px; } }
+
+/*# sourceMappingURL=style.css.map */

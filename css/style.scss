@@ -1,0 +1,162 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fdfcf6;
+$subColor: #008080;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em;
+  background-color: $baseColor;
+}
+
+a {
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
+  text-decoration: none;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+/* Header
+------------------------------------------------------------*/
+header {
+  background-image: url("../images/lesson7.jpg");
+  height: 500px;
+  width: 100%;
+　background-size: cover;
+  background-position: center center;
+  display:flex;
+}
+
+/* Contents
+------------------------------------------------------------*/
+// Common Styles
+section {
+  padding: 60px 0;
+  .container {
+    height: 200px;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto; // 中央揃え
+  }
+}
+
+// Skills
+.skill-box {
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin:10px;
+  text-align:center;
+  box-sizing: border-box;
+  background:#ddd;
+
+
+  h3{
+    background:gray;
+    padding:10px;
+  }
+  p{
+    padding: 60px; 
+  }
+  }
+  
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: $subColor;
+  padding: 30px 0;
+  text-align: center;
+  color: #FFF;
+  height:120px;
+  margin:30px;
+h3{
+  margin:30px;
+  }
+.button{
+  background:#fff;
+  padding:10px;
+  border-radius:5px;
+}
+}
+
+@media (max-width: 768px){
+/* Header
+------------------------------------------------------------*/
+header {
+  background-image: url("../images/lesson7.jpg");
+  height: 250px;
+  width: 100%;
+  background-size:cover;
+  background-position: center center;
+}
+/* Contents
+------------------------------------------------------------*/
+// Common Styles
+section {
+  padding: 60px 0;
+  .container {
+    display: flex;
+    margin: 0 auto; // 中央揃え
+    height:auto;
+    width:auto;
+    flex-direction:column;
+  }
+}
+
+// Skills
+.skill-box {
+  float: left;
+  margin:10px;
+  text-align:center;
+  box-sizing: border-box;
+  background:#ddd;
+  height:auto;
+  width:auto;
+
+  h3{
+    background:gray;
+    padding:10px;
+  }
+  p{
+    padding: 60px; 
+  }
+}
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: $subColor;
+  padding: 30px 0;
+  text-align: center;
+  color: #FFF;
+  height:auto;
+  margin:auto;
+h3{
+  margin:30px;
+  }
+.button{
+  background:#fff;
+  padding:10px;
+  border-radius:5px;
+}
+}
+}
+
+
